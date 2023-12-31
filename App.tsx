@@ -6,17 +6,29 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-} from 'react-native';
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider } from '@ui-kitten/components';
+import ArtList from './screens/list'
+
 
 
 function App(): React.JSX.Element {
 
-  return (
-    <SafeAreaView>
 
-    </SafeAreaView>
+  // return (
+
+  //     <SafeAreaView>
+
+  //         <Text>HOME</Text>
+
+  //     </SafeAreaView>
+
+  // );
+
+  return (
+    <ApplicationProvider {...eva} theme={eva.light}>
+      <ArtList />
+    </ApplicationProvider>
   );
 }
 
